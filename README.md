@@ -1,6 +1,6 @@
-# [soypac](https://artnoi43.github.io/soypac)
+# [soypac](https://github.com/artnoi43/soypac)
 
-An Arch Linux pacman user repository.
+An Arch Linux pacman user repository, available on [artnoi43.github.io/soypac](https://artnoi43.github.io/soypac).
 
 ## Using this pacman repository
 
@@ -40,3 +40,5 @@ server = https://artnoi43.github.io/soypac/x86_64
 ```sh
 $ sudo pacman -Sy
 ```
+
+And the next time you install a software via Pacman, if soypac had higher priority then the package would be downloaded from soypac.
