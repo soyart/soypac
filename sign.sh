@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# sign.sh - signs pacman packages (zst files) in ARCH_DIR (defaults to x86_64)
+# sign.sh - signs pacman packages (.pkg.tar.zst files) in ARCH_DIR (defaults to x86_64)
 # TODO: Use passphrase-fd flag
 
 [ -z $1 ]\
@@ -15,7 +15,7 @@ else
   PASSPHRASE=$2;
 fi;
 
-for f in "$ARCH_DIR"/*.zst; do
+for f in "$ARCH_DIR"/*.pkg.tar.zst; do
   gpg --detach-sign --pinentry-mode loopback --passphrase "$PASSPHRASE" --output "$f.sig" --sign "$f";
   #gpg --detach-sign --pinentry-mode loopback --passphrase --passphrase-fd 0 --output $f.sig --sign $f 
 done;
