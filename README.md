@@ -1,6 +1,6 @@
-# [soypac](https://github.com/artnoi43/soypac)
+# [soypac](https://github.com/soyart/soypac)
 
-An Arch Linux pacman user repository, available on [artnoi43.github.io/soypac](https://artnoi43.github.io/soypac).
+An Arch Linux pacman user repository, available on [soyart.github.io/soypac](https://soyart.github.io/soypac).
 
 ## Using this pacman repository
 
@@ -32,7 +32,7 @@ Add the following snippet to `/etc/pacman.conf`:
 
 ```txt
 [soypac]
-server = https://artnoi43.github.io/soypac/x86_64
+server = https://soyart.github.io/soypac/x86_64
 ```
 
 ### Update and sync package database
